@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root {
+        --cor-1: #17BEBB;
+        --cor-1_1: #19d3d0;
+        --cor-2: #145688;
+        --cor-3: #FFFFFF;
+        --cor-4: #6c6cff;
+        --cor-4_1: #104268;
+        --cor-5: #FA350B;
+        --cor-7: #cf2f0c;
+        --cor-6: #0D293F;
+}
+
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto mono";
+}
+
+html {
+    width: 100%; height: 100%;
+}
+
+body {
+    width: 100%; height: 100%;
+    background-image: linear-gradient(130deg, var(--cor-6) 20%, var(--cor-5) 85%);
+}
+
+main {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 55pt;
+    color: var(--cor-3);
+}
+
+p {
+    margin: 1rem;
+    font-size: 16pt;
+    color: white;
+}
+
+
+img {
+    width: 350px; height: 370px;
+}
+
+#container2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    max-width: 570px;
+    min-width: 400px;
+    width: 100%;
+    height: 90%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3);
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.527) -1px -1px 15px 0px ;
+}
+
+form #email, #senha, #nome{
+    height: 3rem;
+    width: 90%;
+    border-radius: 0.4rem;
+    border: 2px solid var(--cor-5);
+    padding-left: 1rem;
+    caret-color: var(--cor-2);
+}
+
+#nome {
+    display: none;
+}
+
+form #entrar, #cadastrar{
+    width: 90%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: var(--cor-5); /* depois*/ 
+    border: none;
+    color: var(--cor-3);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#entrar {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastrar {
+    display: none;
+}
+
+form #entrar:hover{
+    text-decoration: none;
+    background-color: var(--cor-7);
+}
+
+form a{
+    text-decoration: none;
+    color: var(--cor-5);
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+form a:visited{
+    color: var(--cor-4_1);
+}
+
+#btn-criar {
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+
+#btn-criar:hover {
+    text-decoration: none;
+}
+
+form #criar, #logar{
+    width: 40%;
+    height: 3rem;
+    background-color: var(--cor-2);
+    border: none;
+    color: var(--cor-3);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#logar {
+    display: none;
+}
+
+form #criar:hover {
+    background-color: var(--cor-4_1);
+}
