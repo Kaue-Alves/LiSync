@@ -29,142 +29,278 @@ body {
     background-image: linear-gradient(130deg, var(--cor-6) 20%, var(--cor-5) 85%);
 }
 
-main {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 800px){
+    body{
+        background-image: linear-gradient(130deg, var(--cor-6) 20%, var(--cor-5) 85%);
+    }
+
+    main {
+        width: 100%; height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #container1 {
+        width: 100%; height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 10px;
+        padding: 0 10px 0 10px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        width: 150px; height: 150px;
+    }
+
+    #container2 {
+        width: 100%; height: 60%;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor-3);
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-evenly;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    
+    form #email, #senha, #nome{
+        height: 3rem;
+        width: 90%;
+        border-radius: 0.4rem;
+        border: 2px solid var(--cor-5);
+        padding-left: 1rem;
+        caret-color: var(--cor-2);
+    }
+    
+    #nome {
+        display: none;
+    }
+    
+    form #entrar, #cadastrar{
+        width: 90%;
+        height: 2.5rem;
+        margin-top: 1rem;
+        background-color: var(--cor-5); /* depois*/ 
+        border: none;
+        color: var(--cor-3);
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    #entrar {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cadastrar {
+        display: none;
+    }
+    
+    form #entrar:hover{
+        text-decoration: none;
+        background-color: var(--cor-7);
+    }
+    
+    form a{
+        text-decoration: none;
+        color: var(--cor-5);
+    }
+    
+    form a:hover{
+        text-decoration: underline;
+    }
+    
+    form a:visited{
+        color: var(--cor-4_1);
+    }
+    
+    #btn-criar {
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+    }
+    
+    #btn-criar:hover {
+        text-decoration: none;
+    }
+    
+    form #criar, #logar{
+        width: 40%;
+        height: 3rem;
+        background-color: var(--cor-2);
+        border: none;
+        color: var(--cor-3);
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    #logar {
+        display: none;
+    }
+    
+    form #criar:hover {
+        background-color: var(--cor-4_1);
+    }
 }
 
-#container1 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media only screen and (min-width: 801px){
+    main {
+        width: 100%; height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+    
+    #container1 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        margin: 1rem;
+        font-size: 55pt;
+        color: var(--cor-3);
+    }
+    
+    p {
+        margin: 1rem;
+        font-size: 16pt;
+        color: white;
+    }
+    
+    
+    img {
+        width: 350px; height: 370px;
+    }
+    
+    #container2 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form {
+        max-width: 500px;
+        min-width: 400px;
+        width: 80%;
+        height: 90%;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor-3);
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-evenly;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.527) -1px -1px 15px 0px ;
+    }
+    
+    form #email, #senha, #nome{
+        height: 3rem;
+        width: 90%;
+        border-radius: 0.4rem;
+        border: 2px solid var(--cor-5);
+        padding-left: 1rem;
+        caret-color: var(--cor-2);
+    }
+    
+    #nome {
+        display: none;
+    }
+    
+    form #entrar, #cadastrar{
+        width: 90%;
+        height: 2.5rem;
+        margin-top: 1rem;
+        background-color: var(--cor-5); /* depois*/ 
+        border: none;
+        color: var(--cor-3);
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    #entrar {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cadastrar {
+        display: none;
+    }
+    
+    form #entrar:hover{
+        text-decoration: none;
+        background-color: var(--cor-7);
+    }
+    
+    form a{
+        text-decoration: none;
+        color: var(--cor-5);
+    }
+    
+    form a:hover{
+        text-decoration: underline;
+    }
+    
+    form a:visited{
+        color: var(--cor-4_1);
+    }
+    
+    #btn-criar {
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+    }
+    
+    #btn-criar:hover {
+        text-decoration: none;
+    }
+    
+    form #criar, #logar{
+        width: 40%;
+        height: 3rem;
+        background-color: var(--cor-2);
+        border: none;
+        color: var(--cor-3);
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    #logar {
+        display: none;
+    }
+    
+    form #criar:hover {
+        background-color: var(--cor-4_1);
+    }
 }
 
-h1 {
-    margin: 1rem;
-    font-size: 55pt;
-    color: var(--cor-3);
-}
-
-p {
-    margin: 1rem;
-    font-size: 16pt;
-    color: white;
-}
-
-
-img {
-    width: 350px; height: 370px;
-}
-
-#container2 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-form {
-    max-width: 570px;
-    min-width: 400px;
-    width: 100%;
-    height: 90%;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor-3);
-    align-items: center;
-    padding: 1rem;
-    justify-content: space-evenly;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.527) -1px -1px 15px 0px ;
-}
-
-form #email, #senha, #nome{
-    height: 3rem;
-    width: 90%;
-    border-radius: 0.4rem;
-    border: 2px solid var(--cor-5);
-    padding-left: 1rem;
-    caret-color: var(--cor-2);
-}
-
-#nome {
-    display: none;
-}
-
-form #entrar, #cadastrar{
-    width: 90%;
-    height: 2.5rem;
-    margin-top: 1rem;
-    background-color: var(--cor-5); /* depois*/ 
-    border: none;
-    color: var(--cor-3);
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#entrar {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#cadastrar {
-    display: none;
-}
-
-form #entrar:hover{
-    text-decoration: none;
-    background-color: var(--cor-7);
-}
-
-form a{
-    text-decoration: none;
-    color: var(--cor-5);
-}
-
-form a:hover{
-    text-decoration: underline;
-}
-
-form a:visited{
-    color: var(--cor-4_1);
-}
-
-#btn-criar {
-    width: 100%; 
-    display: flex; 
-    justify-content: center;
-}
-
-#btn-criar:hover {
-    text-decoration: none;
-}
-
-form #criar, #logar{
-    width: 40%;
-    height: 3rem;
-    background-color: var(--cor-2);
-    border: none;
-    color: var(--cor-3);
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#logar {
-    display: none;
-}
-
-form #criar:hover {
-    background-color: var(--cor-4_1);
-}
