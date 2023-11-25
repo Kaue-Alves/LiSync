@@ -118,6 +118,11 @@ body {
         background-color: var(--cor-7);
     }
     
+    form #cadastrar:hover{
+        text-decoration: none;
+        background-color: var(--cor-7);
+    }
+
     form a{
         text-decoration: none;
         color: var(--cor-5);
