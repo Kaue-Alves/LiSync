@@ -54,6 +54,8 @@ cadastrar.addEventListener("click", (e) => {
         saveEmail = inEmail.value
         saveSenha = inSenha.value
         window.alert(`Olá, ${saveName}. Cadastro realizado com sucesso.`)
+
+        localStorage.setItem("usuarioNome", saveName)
     }        
 
     inNome.value = ""
@@ -67,7 +69,11 @@ entrar.addEventListener("click", (e) => {
     if (inEmail.value != "" || inSenha.value != ""){
         if (inEmail.value == saveEmail && inSenha.value == saveSenha){
             window.alert("Parabéns pelo acesso.")
-            window.location.href = "pInicial/p_inicial.html"
+            if (window.innerWidth >= 801) {
+                window.location.href = "pInicial/p_inicial801.html"
+            } else {
+                window.location.href = "pInicial/p_inicial800.html"
+            }
         } else {
             window.alert("Ei seu sem vergonha, vá criar uma conta!!")
         }
@@ -84,4 +90,4 @@ document.querySelector('#esqueceu').addEventListener("click", (e) => {
     inSenha.value = saveSenha
 })
 
-//A partir daqui o js é para a tela inicial
+
