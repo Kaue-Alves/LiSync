@@ -67,6 +67,7 @@ entrar.addEventListener("click", (e) => {
     if (inEmail.value != "" || inSenha.value != ""){
         if (inEmail.value == saveEmail && inSenha.value == saveSenha){
             window.alert("Parabéns pelo acesso.")
+            window.location.href = "pInicial/p_inicial.html"
         } else {
             window.alert("Ei seu sem vergonha, vá criar uma conta!!")
         }
@@ -78,3 +79,9 @@ entrar.addEventListener("click", (e) => {
     inEmail.value = ""
     inSenha.value = ""
 })
+
+document.querySelector('#esqueceu').addEventListener("click", (e) => {
+    inSenha.value = saveSenha
+})
+
+//A partir daqui o js é para a tela inicial

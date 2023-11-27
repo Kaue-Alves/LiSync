@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&display=swap');
 
+:root {
+    --cor-1: #17BEBB;
+    --cor-1_1: #19d3d0;
+    --cor-2: #145688;
+    --cor-3: #FFFFFF;
+    --cor-4: #6c6cff;
+    --cor-4_1: #104268;
+    --cor-5: #FA350B;
+    --cor-7: #cf2f0c;
+    --cor-6: #0D293F;
+}
 
 * {
     margin: 0; padding: 0;
@@ -13,6 +24,7 @@ html {
 
 body {
     width: 100%; height: 100%;
+    background-image: linear-gradient(130deg, var(--cor-6) 20%, var(--cor-5) 85%);
 }
 
 /*@media only screen and (max-width: 800px){}*/
@@ -20,9 +32,11 @@ body {
 @media only screen and (min-width: 601px){
     body {
         background-color: aquamarine;
+        display: flex;
     }
 
     header {
+        z-index: 1;
         position: fixed;
         width: 100%; height: 10%;
         background-color: white;
@@ -34,12 +48,14 @@ body {
     #logo {
         margin-left: 10px;
         width: 50px; height: 50px;
-        background-color: rgb(196, 186, 186);
+        background-image: url(../imagens/Logo-Liara.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-
     }
 
     #perfil {
@@ -58,7 +74,8 @@ body {
     }
 
     main {
-        width: 100%; height: 100%;
+        width: 100%; height: 90%;
+        display: flex;
     }
 
     #lateral {
@@ -66,4 +83,6 @@ body {
         width: 70px; height: 100%;
         background-color: white;
     }
+
+
 }
