@@ -11,5 +11,7 @@ btt.addEventListener("click", (e) => {
         document.querySelectorAll(".nomes").forEach(function(elemento){elemento.style.display = "none"})
         i ++
     }
-    
 })
+
+saveName = localStorage.getItem("usuarioNome")
+document.querySelector("#header2 > h1").innerHTML = `<h1>Bem Vindo, ${saveName}!</h1>` 
