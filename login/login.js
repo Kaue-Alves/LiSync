@@ -48,7 +48,7 @@ bttLogar.addEventListener("click", (e) => {
 cadastrar.addEventListener("click", (e) => {
     e.preventDefault()
     if (inNome.value == "" || inEmail.value == "" || inSenha.value == ""){
-        window.alert("Burro, não sabe nem preencher um negócio básico, cavalo, égua, obrigado por digitar '-'")
+        window.alert("Preencha todos os campos.")
     } else {
         saveName = inNome.value
         saveEmail = inEmail.value
@@ -68,17 +68,16 @@ entrar.addEventListener("click", (e) => {
     e.preventDefault()
     if (inEmail.value != "" || inSenha.value != ""){
         if (inEmail.value == saveEmail && inSenha.value == saveSenha){
-            window.alert("Parabéns pelo acesso.")
             if (window.innerWidth >= 801) {
                 window.location.href = "pInicial/p_inicial801.html"
             } else {
                 window.location.href = "pInicial/p_inicial800.html"
             }
         } else {
-            window.alert("Ei seu sem vergonha, vá criar uma conta!!")
+            window.alert("Email ou senha incorreta")
         }
     } else {
-        window.alert("Preencha os campos seus fuboca.")
+        window.alert("Preencha todos os campos corretamente")
     }
 
     inNome.value = ""

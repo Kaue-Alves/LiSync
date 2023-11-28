@@ -10,6 +10,7 @@
     --cor-5: #FA350B;
     --cor-7: #cf2f0c;
     --cor-6: #0D293F;
+    --cor-7: #D9D9D9;
 }
 
 * {
@@ -27,177 +28,208 @@ body {
     background-image: linear-gradient(130deg, var(--cor-6) 20%, var(--cor-5) 85%);
 }
 
-@media only screen and (max-width: 800px){
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--cor-6);
-        width: 100%; height: 10%;
-        padding: 0px 24px 0 24px;
-    }
 
-    h1 {
-        color: white;
-        font-weight: bold;
-    }
-
-    img {
-        width: 50px; height: 56px;
-    }
-
-    #perfil {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        border-radius: 10px;
-        width: 190px;
-        height: 60%;
-    }
-
-    #perfil > p {
-        margin: none;
-    }
-
-    h6 {
-        font-size: 15px;
-    }
-
-    span {
-        background-image: url(../imagens/pingu.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        width: 50px; height: 50px;
-
-    }
-    
-    main {
-        display: flex;
-        width: 100%; height: 90%;
-        background-color: var(--cor-2);
-    }
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-7);
+    width: 100%; height: 10%;
+    padding: 0px 24px 0 24px;
 }
 
-@media only screen and (min-width: 801px){
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--cor-6);
-        width: 100%; height: 10%;
-        padding: 0px 24px 0 24px;
-    }
+#meioHeader {
+    display: flex;
+}
 
-    h1 {
-        color: white;
-        font-weight: bold;
-    }
+#LS {
+    color: var(--cor-5);
+    font-weight: bold;
+    font-family: monospace;
+}
 
-    img {
-        width: 50px; height: 56px;
-    }
+h1 {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
 
-    #perfil {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        border-radius: 10px;
-        width: 190px;
-        height: 60%;
-    }
+img {
+    width: 50px; height: 56px;
+}
 
-    #perfil > p {
-        margin: none;
-    }
+#perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 190px;
+    height: 60%;
+}
 
-    h6 {
-        font-size: 15px;
-    }
+#perfil > p {
+    margin: none;
+    text-align: right;
+}
 
-    span {
-        background-image: url(../imagens/pingu.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        width: 50px; height: 50px;
+h6 {
+    font-size: 15px;
+}
 
-    }
-    
-    main {
-        display: flex;
-        width: 100%; height: 90%;
-        background-color: var(--cor-2);
-    }
-
-    .icones {
-        width: 40px; height: 40px;
-    }
-
-    .lados {
-        background-color: var(--cor-6);
-        width: 100px; height: 100%;
-        display: flex;
-        flex-direction: column;
-        transition: 0.1s;
-    }
-
-    #lado ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100%;
-    }
-
-    ul {
-        padding-left: 15px;
-    }
-
-   li {
+span {
     display: flex;
     align-items: center;
-    width: 40px;
-    height: 80px;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20%; height: 50%;
 }
 
-    p {
-        display: none;
-        font-size: 20px;
-        margin-left: 20px;
-        cursor: default;
-    }
+#icoSpan {
+    width: 100%;
+    height: 100%;
+}
 
-    #lado:hover {
-        width: 250px;
-        padding-right: 10px;
-    }
+main {
+    display: flex;
+    width: 100%; height: 90%;
+    background-color: var(--cor-2);
+}
 
-    #lado:hover p {
-        display: block;
-    }
+.icones {
+    width: 40px; height: 40px;
+}
 
-    #lado:hover li{
-        width: 100%;
-        height: 80px;
-        background-color: var(--cor-6);
-        color: white;
-    }
+.lados {
+    background-color: var(--cor-7);
+    width: 100px; height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.1s;
+}
 
-    #principal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        background-color: #104268;
-        width: 100%; height: 100%;
-    }
+#lado ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
 
-    #principal > h1 {
-        font-size: 350%;
-    }
+li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding-left: 15px;
+}
+
+p {
+    display: none;
+    font-size: 20px;
+    padding-left: 20px;
+    cursor: default;
+}
+
+#lado:hover {
+    width: 300px;
+}
+
+#lado:hover p {
+    display: block;
+}
+
+#lado:hover li{
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--cor-6);
+    width: 100%; height: 100%;
+}
+
+#principal > h1 {
+    font-size: 350%;
+}
+
+
+/* Area dos hover dos li */
+
+#li1:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li1:hover .icones {
+    fill: white;
+}
+
+#li2:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li2:hover .icones {
+    fill: white;
+}
+
+#li3:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li3:hover .icones {
+    fill: white;
+}
+
+#li4:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li4:hover .icones {
+    fill: white;
+}
+
+#li5:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li5:hover .icones {
+    fill: white;
+}
+
+#li6:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li6:hover .icones {
+    fill: white;
+}
+
+#li7:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li7:hover .icones {
+    fill: white;
+}
+
+#li8:hover {
+    background-color: var(--cor-5);
+    
+}
+
+#li8:hover .icones {
+    fill: white;
 }
